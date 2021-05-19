@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/menu-lateral.css" rel="stylesheet">
+    <link href="./css/editor-codigo.css" rel="stylesheet">
+    <link href="./css/config-projeto.css" rel="stylesheet">
+    <link href="./css/responsividade.css" rel="stylesheet">
+
+
+
+
+    <title>Alura Dev</title>
+
+</head>
+
+<body class="app">
+
+    <header class="cabecalho">
+
+        <div class="parte1">
+
+        <div class="cabecalho__logo">
+            <img src="./img/logo.png" alt="Logo da AluraDev" class="logo">
+        </div>  
+
+        <div class="campo_pesquisar-desktop">
+        <input type="search" class="campo__busca-desktop" placeholder="Busque por algo"> 
+        </div>
+
+        <div class="cabecalho__user">
+            <img src="./img/eu.jpg" alt="Foto do usuário" class="user-img">
+            <p class="user__name">Marina</p>
+        </div>
+        
+        <div class="icones">           
+           <div class="search-icon">
+            <i class="fas fa-search fa-lg icone-pesquisar"></i>            
+            </div>        
+            
+            <div class="menu-icon">         
+            <i class="fas fa-bars fa-lg icone-menu"></i>
+            </div>
+        </div>        
+    </div>
+
+    
+
+        <div class="campo_pesquisar-mobile">
+            <input type="search" class="campo__busca" placeholder="Busque por algo"> 
+        </div>
+
+    </header>
+
+
+     <main class="conteudo">
+
+        <section class="conteudo__principal">
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="fecharMenu()">&times;</a>                
+                <p class="menu__titulo">Menu</p>
+                <ul class="menu__lista" style="list-style-type: none;">
+                    <li class="menu__item">
+                        <a class="menu__link ativo" href="#" style="display: flex;">
+                            <img src="./img/editorCodigo.png" alt="" class="menu__img">
+                            <p class="menu__link___conteudo destaque"> Editor de código </p>
+                        </a>
+                        <a class="menu__link" href="#" style="display: flex;">
+                            <img src="./img/comunidade.png" alt="" class="menu__img">
+                            <p class="menu__link___conteudo"> Comunidade </p>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+
+           <nav class="menu">
+                <p>Menu</p>
+                <ul class="menu__lista" style="list-style-type: none;">
+                    <li class="menu__item">
+                        <a class="menu__link ativo" href="#">
+                            <img src="./img/editorCodigo.png" alt="">
+                            <p class="menu__link___conteudo"> Editor de código </p>
+                        </a>
+                        <a class="menu__link" href="#">
+                            <img src="./img/comunidade.png" alt="">
+                            <p class="menu__link___conteudo"> Comunidade </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="editor_codigo">
+                <div class="bolinhas">
+                    <img src="./img/buttons.png" alt="" class="buttons">
+                </div>
+                <textarea class="codigo" style="resize: none">
+                    const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+                    const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+                    const unfold = (f, seed) => {
+                        const go = (f, seed, acc) => {
+                            const res = f(seed)
+                            return res ? go(f, res[1], acc.concat([res[0]])) : acc
+                        }
+                        return go(f, seed, [])
+                        }
+                    }   
+                </textarea>
+            </div>
+            <div class="button">
+                <button class="highlight__button">Visualizar com o highlight</button>
+            </div>
+
+
+            <div class="seu-projeto">
+                <p class="p__seu-projeto">Seu projeto</p>
+
+                <input type="text" class="nome-projeto" placeholder="Nome do seu projeto">
+                <input type="text" class="descricao-projeto" placeholder="Descrição do seu projeto">
+            </div>
+
+            <div class="personalizacao">
+                <p class="p__personalizacao">Personalização</p>
+                <select name="linguagens" class="linguagens">
+                    <option value="javascript" class="linguagens__opcao">JavaScript</option>
+                    <option value="c#" class="linguagens__opcao">C#</option>
+                    <option value="php" class="linguagens__opcao">PHP</option>
+                    <option value="java" class="linguagens__opcao">Java</option>
+                </select>
+
+                <input type="color" value="#6BD1FF" class="paleta__cores">
+
+                <button class="salvar__button">Salvar projeto</button>
+
+            </div>
+        </section> 
+    </main>
+
+    <script src="./js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.editor_codigo{    
+    border: 32px solid rgba(107, 209, 255, 1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    height: 432px;
+}
+
+.codigo {
+    height: calc(100% - 3rem);
+    width: 100%;
+    border-bottom-left-radius: 0.5rempx;
+    border-bottom-right-radius: 0.5rem;
+    border: none;
+    background: #000000;
+    color: #FFFFFF;
+}
+.bolinhas {
+    background-color: black;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.buttons {
+    margin: 1rem 1rem;
+}
+
+.highlight__button{   
+    width: 100%;
+    background: rgba(80, 129, 251, 0.08);
+    border: none;
+    border-radius: 8px;
+    height: 3.5rem;    
+    color: #FFF;         
+}

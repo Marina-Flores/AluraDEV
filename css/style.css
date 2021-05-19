@@ -1,0 +1,21 @@
+.app{
+    background: #051D3B;    
+    margin-left: 1rem;
+    margin-right: 1rem;   
+    
+}
+
+p:not(.menu__link___conteudo){
+    letter-spacing: 0.4em;
+}
+
+p:not(.menu__link___conteudo)  {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+}
+button{
+    font-family: 'Inter', sans-serif;
+}

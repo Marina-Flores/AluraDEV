@@ -1,0 +1,63 @@
+.seu-projeto{    
+    width: 100%;    
+    align-items: center;
+}
+
+.nome-projeto, .descricao-projeto{
+    background: rgba(255, 255, 255, 0.16);
+    border: none;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 10px;  
+    font-family: 'Inter', sans-serif;
+}
+
+::placeholder{
+    color: #FFFFFF;
+    opacity: 0.64;
+}
+
+.nome-projeto, .linguagens{
+    height: 56px;
+}
+
+.descricao-projeto{
+    margin-top: 20px;
+    height: 80px;    
+}
+
+.personalizacao{   
+    margin-top: 20px;
+}
+
+.linguagens{
+    width: 100%;
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    color: #FFFFFF;
+    opacity: 0.6; 
+}
+
+.paleta__cores{
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.salvar__button{
+    background: rgba(80, 129, 251, 1);
+    width: 100%;
+    margin-top: 20px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(5, 29, 59, 1);  
+    font-weight: bolder;
+    margin-bottom: 1rem;
+
+}
